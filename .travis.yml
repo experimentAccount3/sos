@@ -22,6 +22,6 @@ install:
   - pip install properform
 
 script:
-  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_d1bedc1ef4_2
-  - python -m properform Push 47.88.50.110:15554 asdf_sos_d1bedc1ef4_2 ./profile_sos_d1bedc1ef4_2
- #2017-08-12 11:40:02 modified at 0 #2017-08-12 11:40:07 modified at 1 #2017-08-12 11:40:11 modified at 2
+  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_d1bedc1ef4_3
+  - python -m properform Push 47.88.50.110:15554 asdf_sos_d1bedc1ef4_3 ./profile_sos_d1bedc1ef4_3
+ #2017-08-12 11:40:02 modified at 0 #2017-08-12 11:40:07 modified at 1 #2017-08-12 11:40:11 modified at 2 #2017-08-12 11:40:16 modified at 3
