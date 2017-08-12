@@ -23,7 +23,7 @@ install:
 
 
 script:
-  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_f3ec4ae492_2
-  - python -m properform Push 47.88.50.110:15554 asdf_sos_f3ec4ae492_2 ./profile_sos_f3ec4ae492_2
+  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_f3ec4ae492_3
+  - python -m properform Push 47.88.50.110:15554 asdf_sos_f3ec4ae492_3 ./profile_sos_f3ec4ae492_3
 
- #2017-08-12 10:46:26 modified at 0 #2017-08-12 10:46:30 modified at 1 #2017-08-12 10:46:35 modified at 2
+ #2017-08-12 10:46:26 modified at 0 #2017-08-12 10:46:30 modified at 1 #2017-08-12 10:46:35 modified at 2 #2017-08-12 10:46:39 modified at 3
