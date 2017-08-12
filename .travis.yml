@@ -18,7 +18,7 @@ install:
 
 script:
   - "pep8 sos"
-  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_d80b772129_0
-  - python -m properform Push 47.88.50.110:15554 asdf_sos_d80b772129_0 ./profile_sos_d80b772129_0
+  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_d80b772129_1
+  - python -m properform Push 47.88.50.110:15554 asdf_sos_d80b772129_1 ./profile_sos_d80b772129_1
 
- #2017-08-12 10:12:18 modified at 0
+ #2017-08-12 10:12:18 modified at 0 #2017-08-12 10:12:22 modified at 1
