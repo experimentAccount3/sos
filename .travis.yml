@@ -1,21 +1,29 @@
 language: python
 python:
   - 2.7
-  - 3.2
-  - 3.3
-  - 3.4
+
 matrix:
   allow_failures:
     - python: 3.4
-notifications:
-  email:
-    sos-devel@redhat.com
-  irc:
-    channels:
-      - "us.freenode.net#sosreport"
-    on_success: change
+
+before_install:
+ # add for profile
+  - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+  - sudo apt-get update -qq
+
+
 install:
   - "pip install six nose nose-cov --use-mirrors"
   - "python setup.py install"
+  # add for profile
+  - sudo apt-get install -qq g++-4.8
+  - export CXX="g++-4.8"
+  - pip install nose-cprof
+  - pip install properform
+
+
 script:
-  - "nosetests -v --with-cover --cover-package=sos --cover-html"
+  - nosetests -v --with-cover --cover-package=sos --cover-html --with-cprofile --cprofile-stats-erase --cprofile-stats-file=profile_sos_5b098a79ad_0
+  - python -m properform Push 47.88.50.110:15554 asdf_sos_5b098a79ad_0 ./profile_sos_5b098a79ad_0
+
+ #2017-08-12 10:47:32 modified at 0
